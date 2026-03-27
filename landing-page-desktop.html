@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUMINARY | Digital Specialist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-tint": "#b9c7e4",
+                        "on-primary": "#233148",
+                        "outline": "#8f9097",
+                        "surface-container-lowest": "#070d1f",
+                        "on-surface-variant": "#c5c6cd",
+                        "tertiary-fixed": "#5ffbd6",
+                        "surface-container": "#191f31",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "surface": "#0c1324",
+                        "secondary-container": "#00e3fd",
+                        "on-tertiary": "#00382d",
+                        "primary-fixed": "#d6e3ff",
+                        "on-error": "#690005",
+                        "background": "#0c1324",
+                        "on-error-container": "#ffdad6",
+                        "tertiary": "#38debb",
+                        "on-primary-container": "#74829d",
+                        "inverse-on-surface": "#2a3043",
+                        "inverse-primary": "#515f78",
+                        "secondary-fixed": "#9cf0ff",
+                        "secondary-fixed-dim": "#00daf3",
+                        "secondary": "#bdf4ff",
+                        "primary": "#b9c7e4",
+                        "on-tertiary-fixed-variant": "#005142",
+                        "tertiary-fixed-dim": "#38debb",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#001f24",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "surface-bright": "#33394c",
+                        "inverse-surface": "#dce1fb",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#00616d",
+                        "surface-variant": "#2e3447",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-primary-fixed-variant": "#39475f",
+                        "on-secondary": "#00363d",
+                        "outline-variant": "#44474d",
+                        "on-tertiary-fixed": "#002019",
+                        "surface-container-low": "#151b2d",
+                        "primary-container": "#0a192f",
+                        "on-surface": "#dce1fb",
+                        "on-background": "#dce1fb",
+                        "surface-dim": "#0c1324",
+                        "tertiary-container": "#001e17",
+                        "surface-container-highest": "#2e3447",
+                        "on-tertiary-container": "#00937a",
+                        "surface-container-high": "#23293c"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-soft {
+            background: radial-gradient(circle at center, rgba(0, 227, 253, 0.15) 0%, transparent 70%);
+        }
+        .neon-accent {
+            background: linear-gradient(to right, #38debb, #00daf3);
+        }
+        .text-neon {
+            background: linear-gradient(to right, #38debb, #00daf3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#0A192F]/60 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="text-2xl font-black tracking-tighter text-slate-100 font-headline">TREVOR TRAN</div>
+<div class="hidden md:flex gap-10">
+<a class="font-manrope uppercase tracking-widest text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#about">About</a>
+<a class="font-manrope uppercase tracking-widest text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#services">Services</a>
+<a class="font-manrope uppercase tracking-widest text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#portfolio">Portfolio</a>
+<a class="font-manrope uppercase tracking-widest text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#contact">Contact</a>
+</div>
+<button class="bg-gradient-to-r from-tertiary to-secondary-fixed-dim text-on-secondary px-6 py-2 rounded-xl font-bold font-headline scale-95 active:scale-90 duration-200 uppercase tracking-widest text-xs">
+                Let's Talk
+            </button>
+</nav>
+</header>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+<div class="absolute inset-0 glow-soft -z-10"></div>
+<div class="max-w-7xl mx-auto px-8 w-full flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8 text-center md:text-left">
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-highest rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="text-xs font-bold tracking-[0.2em] uppercase text-tertiary">Available for selective projects</span>
+</div>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight">Xây dựng giải pháp số giúp công việc <br/><span class="text-neon">vận hành hiệu quả hơn.</span></h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl text-lg md:text-xl leading-relaxed">Biến ý tưởng thành website, hệ thống và trải nghiệm chuyên nghiệp. Đơn giản, rõ ràng và tập trung vào kết quả thực tế.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
+<button class="bg-gradient-to-r from-tertiary to-secondary-fixed-dim text-on-secondary px-8 py-4 rounded-xl font-bold font-headline uppercase tracking-widest text-sm hover:opacity-90 transition-all">
+                            View Portfolio
+                        </button>
+<button class="bg-secondary-container/10 border border-secondary-container/20 text-secondary px-8 py-4 rounded-xl font-bold font-headline uppercase tracking-widest text-sm hover:bg-secondary-container/20 transition-all">
+                            About Me
+                        </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="relative w-80 h-80 md:w-[500px] md:h-[500px] mx-auto">
+<!-- Ambient Glow behind Avatar -->
+<div class="absolute inset-0 bg-secondary-container/30 blur-[100px] rounded-full"></div>
+<img alt="Professional Avatar" class="relative z-10 w-full h-full object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" data-alt="Modern professional portrait of a man in dark lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlkW6fxfJ_OuKatRIpJ9mzgoIyHrBwYeSQZ-CVzFj9YclBkWjvGJrawHxkXZ3LslcnZMozoUz2hCUwOxA8JLt6_8z0HQnDFzRAkmPzDReJ_w9DStagDL3l5Dd1WRQDA1syf2xh3GnyPFwMk-uY5_8v35zqOzdPLLBlHyPrr2XVFs_YUUUusbXovYCobVPxDbwZ9N00QdU_fkjicb4TJ6vsq5TcSFWbCSItHmax9vphlPW4UTFKE1n8luv6sE0qJBjPSetllVjPywk"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<img alt="Technology Abstract" class="rounded-3xl object-cover w-full aspect-video md:aspect-square" data-alt="Futuristic cyber security interface with glowing lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiAikapalr7hsQfIIxtckTbFOm_g_RGIF5sDp6bsd_-sRAGfgaKH_lG5YNMQhd9f5i53P1qDYa_4GZMYr0NMarGOPNuCCWDjFgoWY6GEH4p5tPS-KDOJODH4Seox7pzv3ViM8poA4x411FfWItFoeD_NpF3eLIePaKbXQpGHi4RaVB-bsRkeyNrxqhrbk2hZMvAd3FFhametDAPWeSpvwn9a58v_o3EBWrCzNP4BGylDX0hJAe0-6TjQCxPFB6wvDtBn9_dtn5Ohg"/>
+</div>
+<div class="space-y-8 order-1 md:order-2">
+<h2 class="font-headline font-bold text-sm tracking-[0.3em] uppercase text-tertiary">TREVOR TRAN</h2>
+<h3 class="font-headline font-bold text-4xl md:text-5xl leading-tight">Nâng tầm thương hiệu qua những trải nghiệm số chuyên nghiệp.</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">Tôi là người yêu thích việc xây dựng những sản phẩm số vừa đẹp, vừa hữu ích. Tôi tập trung vào tính thực tế, trải nghiệm người dùng và khả năng ứng dụng vào công việc hằng ngày. Tôi tin rằng một sản phẩm tốt không chỉ hoạt động ổn định mà còn phải giúp tiết kiệm thời gian và nâng cao hiệu suất. Mỗi dự án là một cơ hội để tạo ra giá trị rõ ràng cho khách hàng.</p>
+<div class="grid grid-cols-2 gap-8 pt-4">
+<div>
+<span class="block text-4xl font-black font-headline text-secondary">120+</span>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-500">Global Clients</span>
+</div>
+<div>
+<span class="block text-4xl font-black font-headline text-secondary">10yr</span>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-500">Industry Experience</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface" id="services">
+<div class="max-w-7xl mx-auto px-8 text-center mb-20">
+<h2 class="font-headline font-bold text-sm tracking-[0.3em] uppercase text-tertiary mb-4">Core Expertise</h2>
+<h3 class="font-headline font-bold text-4xl md:text-5xl">Giải Pháp Số Toàn Diện</h3>
+</div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 gap-8"><!-- Service Card 1 -->
+<div class="bg-surface-container-high p-10 rounded-3xl hover:bg-surface-container-highest transition-all group">
+<div class="w-16 h-16 bg-secondary-container/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-4xl">web</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-4 text-slate-100">Thiết kế Landing Page &amp; Website</h4>
+<p class="text-on-surface-variant leading-relaxed">Thiết kế landing page và website cá nhân/doanh nghiệp chuyên nghiệp.</p>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-high p-10 rounded-3xl hover:bg-surface-container-highest transition-all group">
+<div class="w-16 h-16 bg-secondary-container/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-4xl">settings_suggest</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-4 text-slate-100">Hệ thống quản lý</h4>
+<p class="text-on-surface-variant leading-relaxed">Xây dựng hệ thống quản lý nội bộ đơn giản, dễ sử dụng và hiệu quả.</p>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-high p-10 rounded-3xl hover:bg-surface-container-highest transition-all group">
+<div class="w-16 h-16 bg-secondary-container/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-4xl">design_services</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-4 text-slate-100">Tối ưu UI/UX</h4>
+<p class="text-on-surface-variant leading-relaxed">Tối ưu giao diện, trải nghiệm người dùng và quy trình làm việc hiện có.</p>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-surface-container-high p-10 rounded-3xl hover:bg-surface-container-highest transition-all group">
+<div class="w-16 h-16 bg-secondary-container/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-4xl">lightbulb</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-4 text-slate-100">Tư vấn giải pháp số</h4>
+<p class="text-on-surface-variant leading-relaxed">Tư vấn giải pháp số phù hợp với mục tiêu kinh doanh và ngân sách.</p>
+</div></div>
+</section>
+<!-- Portfolio Section (Bento Grid) -->
+<section class="py-32 bg-surface-container-low" id="portfolio">
+<div class="max-w-7xl mx-auto px-8 mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<h2 class="font-headline font-bold text-sm tracking-[0.3em] uppercase text-tertiary mb-4">Selected Works</h2>
+<h3 class="font-headline font-bold text-4xl md:text-5xl">Proof of Concept</h3>
+</div>
+<p class="text-on-surface-variant max-w-sm text-right hidden md:block">
+                    A collection of digital products that redefine industry standards and user expectations.
+                </p>
+</div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-6"><!-- Item 1 -->
+<div class="md:col-span-12 lg:col-span-6 relative group overflow-hidden rounded-3xl bg-surface h-[400px]">
+<img alt="Project One" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk-GKokocNwOcYQtjRilIBOpMUe_l27OAyGfl1J-FGb8eB41SGHT7-d94rhdBR3h3FsZMjtFJRoE00rDpOgUZv6sc0GRstFLEujELbz5zv3CYZpjW-HM04MBi5EAN2cjbt9zswSuS_h1wjeKbQtpW50CtO9_Hd2MR9EuG02PuL3JR11Zl_LWLkIEdkKOIA8fJa_bHtuI3GrOTEwtMT6IpPFdWQ42lSaJnZ_G1tNwlIHcTGaMyjuTruCWwFk-aPp-VkUEHtPBMsRow"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-10 left-10 right-10">
+<h4 class="text-2xl font-headline font-bold text-white">Website &amp; Landing Page</h4>
+<p class="text-tertiary font-bold tracking-widest uppercase text-xs mt-2">Thiết kế giao diện hiện đại, rõ thông điệp và tối ưu chuyển đổi.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="md:col-span-12 lg:col-span-6 relative group overflow-hidden rounded-3xl bg-surface h-[400px]">
+<img alt="Project Two" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJBLq_8bkSZESCZmWU1Skm61KG8_nHMhTNToLv1Q5Yw1VZOjd7KXdIQG6ih8HWdJcQcjElP0IEN64nY1Imga_VpK7kql1AQ5zDQB9Fl6KWV1cL_OGC64oF1baNuHxYQVD2tzB4lm1mYWeOCtPq9-wb6rp69DbIkbFUC0jNMtcsRV1vc3sjecBuPHPEIJVb3hfyC4RseuGUANJgWL9PJGO5rxXite3RXHWQ86kH8FWUW5c14zCUb2dEKkL4PLkWAp-JTMVabrAUxNU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-10 left-10 right-10">
+<h4 class="text-2xl font-headline font-bold text-white">Hệ thống quản lý</h4>
+<p class="text-tertiary font-bold tracking-widest uppercase text-xs mt-2">Xây dựng công cụ hỗ trợ vận hành, theo dõi công việc và quản lý dữ liệu hiệu quả.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="md:col-span-12 relative group overflow-hidden rounded-3xl bg-surface h-[300px]">
+<img alt="Project Three" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiAikapalr7hsQfIIxtckTbFOm_g_RGIF5sDp6bsd_-sRAGfgaKH_lG5YNMQhd9f5i53P1qDYa_4GZMYr0NMarGOPNuCCWDjFgoWY6GEH4p5tPS-KDOJODH4Seox7pzv3ViM8poA4x411FfWItFoeD_NpF3eLIePaKbXQpGHi4RaVB-bsRkeyNrxqhrbk2hZMvAd3FFhametDAPWeSpvwn9a58v_o3EBWrCzNP4BGylDX0hJAe0-6TjQCxPFB6wvDtBn9_dtn5Ohg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-10 left-10">
+<h4 class="text-2xl font-headline font-bold text-white">Dự án theo yêu cầu</h4>
+<p class="text-tertiary font-bold tracking-widest uppercase text-xs mt-2">Phát triển giải pháp phù hợp với từng mô hình kinh doanh và nhu cầu thực tế.</p>
+</div>
+</div></div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-surface" id="contact">
+<div class="max-w-3xl mx-auto px-8 text-center">
+<h2 class="font-headline font-bold text-sm tracking-[0.3em] uppercase text-tertiary mb-4">Get In Touch</h2>
+<h3 class="font-headline font-bold text-4xl md:text-5xl mb-12">Liên hệ với tôi</h3>
+<p class="text-on-surface-variant text-lg mb-10">Hãy liên hệ nếu bạn cần một landing page chuyên nghiệp hoặc một giải pháp số phù hợp cho công việc của mình. Tôi luôn sẵn sàng trao đổi để biến ý tưởng của bạn thành sản phẩm thực tế.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 text-left">
+<div class="flex items-center gap-4 bg-surface-container-high p-4 rounded-xl">
+<span class="material-symbols-outlined text-tertiary">mail</span>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Email</p>
+<p class="font-headline font-bold">yourname@email.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-high p-4 rounded-xl">
+<span class="material-symbols-outlined text-tertiary">phone_iphone</span>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Phone</p>
+<p class="font-headline font-bold">0123 456 789</p>
+</div>
+</div>
+</div><form class="space-y-6 text-left">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl px-6 py-4 text-on-surface focus:ring-2 focus:ring-secondary/50 transition-all placeholder:text-slate-600" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl px-6 py-4 text-on-surface focus:ring-2 focus:ring-secondary/50 transition-all placeholder:text-slate-600" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500 ml-1">Message</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-xl px-6 py-4 text-on-surface focus:ring-2 focus:ring-secondary/50 transition-all placeholder:text-slate-600" placeholder="Tell me about your vision..." rows="5"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-tertiary to-secondary-fixed-dim text-on-secondary px-8 py-5 rounded-xl font-black font-headline uppercase tracking-widest text-sm hover:shadow-[0_0_40px_rgba(56,222,187,0.3)] transition-all" type="submit">
+                        Initiate Connection
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#0c1324] w-full py-12 px-8 tonal-shift bg-slate-900/30">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-slate-200 font-headline">TREVOR TRAN</div>
+<div class="flex flex-wrap justify-center gap-8"><a class="font-inter text-sm leading-relaxed text-slate-500 hover:text-tertiary transition-colors" href="#">Facebook</a>
+<a class="font-inter text-sm leading-relaxed text-slate-500 hover:text-tertiary transition-colors" href="#">LinkedIn</a>
+<a class="font-inter text-sm leading-relaxed text-slate-500 hover:text-tertiary transition-colors" href="#">Zalo</a>
+<a class="font-inter text-sm leading-relaxed text-slate-500 hover:text-tertiary transition-colors" href="#">Privacy Policy</a></div>
+<p class="font-inter text-sm leading-relaxed text-slate-400">© 2024 Trevor Tran. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
