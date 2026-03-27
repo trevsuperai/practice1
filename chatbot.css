@@ -158,18 +158,18 @@
 
 .chat-input {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 10px 16px;
-    color: #fff;
-    outline: none;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 10px 16px !important;
+    color: #ffffff !important;
+    outline: none !important;
     font-family: inherit;
-    transition: border-color 0.2s;
 }
 
 .chat-input:focus {
-    border-color: rgba(59, 130, 246, 0.5);
+    border-color: rgba(59, 130, 246, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
 }
 
 .chat-send {
