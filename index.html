@@ -7,7 +7,8 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="chatbot.css">
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -290,4 +291,26 @@
 <p class="font-inter text-sm leading-relaxed text-slate-400">© 2024 Trevor Tran. All rights reserved.</p>
 </div>
 </footer>
+
+<!-- Chatbot Container -->
+<div class="chatbot-container" id="chat-container">
+    <div class="chatbot-header">
+        <div class="chatbot-title">
+            <div class="online-dot"></div>
+            Trợ lý AI
+        </div>
+        <div class="chatbot-actions">
+            <button id="chat-refresh" title="Làm mới cuộc trò chuyện"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="chat-close" title="Đóng chat"><i class="fa-solid fa-times"></i></button>
+        </div>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input-container">
+        <input type="text" id="chat-input" class="chat-input" placeholder="Nhập tin nhắn..." autocomplete="off">
+        <button id="chat-send" class="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
+<!-- End Chatbot -->
+<script type="module" src="chatbot.js"></script>
+
 </body></html>

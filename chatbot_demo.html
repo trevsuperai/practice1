@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Demo</title>
+    <!-- Background đẹp để tôn lên Glassmorphism -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e1b4b, #312e81, #1e3a8a);
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="chatbot.css">
+    <!-- Font Awesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chat-container">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <div class="online-dot"></div>
+                Trợ lý AI
+            </div>
+            <div class="chatbot-actions">
+                <button id="chat-refresh" title="Làm mới cuộc trò chuyện"><i class="fa-solid fa-rotate-right"></i></button>
+                <button id="chat-close" title="Đóng chat"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Tin nhắn sẽ được render ở đây -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Nhập tin nhắn..." autocomplete="off">
+            <button id="chat-send" class="chat-send"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Script dạng module vì ta import OpenAI / Marked -->
+    <script type="module" src="chatbot.js"></script>
+</body>
+</html>
